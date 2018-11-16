@@ -13,7 +13,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        main.cpp
+        cpp/main.cpp \
+    cpp/pdfscreenshotprovider.cpp \
+    cpp/global.cpp
+
+include(cpp/utils/utils.pri)
+
 
 RESOURCES += qml.qrc
 
@@ -27,3 +32,13 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+HEADERS += \
+    cpp/pdfscreenshotprovider.h \
+    cpp/global.h
+
+
+win32: LIBS += -L$$PWD/3rdparty/Win32/Poppler/ -llibpoppler-qt5.dll -llibpoppler.dll
+
+INCLUDEPATH += $$PWD/3rdparty/Win32/Poppler/Include
+DEPENDPATH += $$PWD/3rdparty/Win32/Poppler/Include

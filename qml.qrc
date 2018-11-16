@@ -1,5 +1,25 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
+        <file>images/close.ico</file>
+        <file>images/close.png</file>
+        <file>images/docencrypt.png</file>
+        <file>images/image.png</file>
+        <file>images/limitaccess.png</file>
+        <file>images/line.png</file>
+        <file>images/nextpage.ico</file>
+        <file>images/open.ico</file>
+        <file>images/previouspage.ico</file>
+        <file>images/rotationleft.png</file>
+        <file>images/rotationright.png</file>
+        <file>images/save.ico</file>
+        <file>images/save.png</file>
+        <file>images/text.png</file>
+        <file>images/undo.png</file>
+        <file>images/zoom_in.ico</file>
+        <file>images/zoom_out.ico</file>
+        <file>images/zoom_reset.ico</file>
+        <file>qml/Delayer.qml</file>
+        <file>qml/PdfViewer.qml</file>
+        <file>qml/main.qml</file>
     </qresource>
 </RCC>

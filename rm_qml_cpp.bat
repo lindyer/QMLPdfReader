@@ -1,0 +1,1 @@
+del E:\AAA\ProjectCode\Qt\build-PdfEditorQml-Desktop_Qt_5_9_6_MinGW_32bit-Debug\debug\qrc_qml.*
